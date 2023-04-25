@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Button } from 'react-bootstrap';
+import { Image, Button } from 'react-bootstrap';
 import { getPokemon } from '../api/pokeData';
 import { useAuth } from '../utils/context/authContext';
 import PokeCard from '../components/PokeCard';
@@ -25,7 +25,16 @@ function Home() {
   return (
     <div className="text-center my-4">
       <Link href="/pokemon/new" passHref>
-        <Button>Add a Pokemon</Button>
+        <Button style={{ backgroundColor: 'transparent', border: 'none' }}>
+          <Image
+            src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTlmYTg5ZmExMDBlZDVmZTJmMzAyYTc4YWI2MDYxZjZlZjFhN2UxOSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/0z6bpqKZAvTznkvNTl/giphy.gif"
+            width="150"
+            height="150"
+            className="d-inline-block align-top style"
+            style={{ background: 'transparent' }}
+            alt="PokéRoster"
+          />
+        </Button>
       </Link>
       <div className="d-flex flex-wrap">
         {/* TODO: map over books here using BookCard component */}

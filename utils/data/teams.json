@@ -2,7 +2,7 @@
   "1": {
     "team_name": "Team Legendary",
     "image": "https://i.pinimg.com/originals/82/1a/b4/821ab4b26090e8575e15f4f35711985f.jpg",
-    "email": "teamlegendary@gmail.com",
+    "creator": "Jimmy Pham",
     "favorite": true,
     "firebaseKey": "",
     "uid": ""
@@ -11,7 +11,7 @@
   "2": {
     "team_name": "Team Electric",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Pok%C3%A9mon_Electric_Type_Icon.svg/1024px-Pok%C3%A9mon_Electric_Type_Icon.svg.png",
-    "email": "teamelectric@gmail.com",
+    "creator": "Jimmy Pham",
     "favorite": false,
     "firebaseKey": "",
     "uid": ""

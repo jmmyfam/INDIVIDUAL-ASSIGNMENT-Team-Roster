@@ -8,7 +8,7 @@ import { useAuth } from '../../utils/context/authContext';
 import { createTeam, updateTeam } from '../../api/teamData';
 
 const initialTeamState = {
-  email: '',
+  creator: '',
   image: '',
   team_name: '',
   favorite: false,
@@ -35,7 +35,7 @@ function TeamForm({ obj }) {
     e.preventDefault();
     if (obj.firebaseKey) {
       updateTeam(teamInput)
-        .then(() => router.push(`/teams/${obj.firebaseKey}`));
+        .then(() => router.push(`/team/${obj.firebaseKey}`));
     } else {
       const payload = { ...teamInput, uid: user.uid };
       createTeam(payload).then(({ name }) => {
@@ -75,12 +75,12 @@ function TeamForm({ obj }) {
       </FloatingLabel>
 
       {/* EMAIL INPUT  */}
-      <FloatingLabel controlId="floatingInput4" label="Team Email" className="mb-3">
+      <FloatingLabel controlId="floatingInput4" label="Team Creator" className="mb-3">
         <Form.Control
           type="text"
-          placeholder="Enter Team Email"
-          name="email"
-          value={teamInput.email}
+          placeholder="Enter Team Creator"
+          name="creator"
+          value={teamInput.creator}
           onChange={handleTeamChange}
           required
         />
@@ -103,14 +103,14 @@ function TeamForm({ obj }) {
       />
 
       {/* SUBMIT BUTTON  */}
-      <Button type="submit">{obj.firebaseKey ? 'Update' : 'Create'} Team</Button>
+      <Button type="submit">{obj.firebaseKey ? 'Update' : 'Create'}</Button>
     </Form>
   );
 }
 
 TeamForm.propTypes = {
   obj: PropTypes.shape({
-    email: PropTypes.string,
+    creator: PropTypes.string,
     image: PropTypes.string,
     team_name: PropTypes.string,
     favorite: PropTypes.bool,

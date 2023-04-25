@@ -25,12 +25,12 @@ function PokeCard({ pokeObj, onUpdate }) {
         <p className="card-text bold">{pokeObj.team}</p>
         <p className="card-text bold">{pokeObj.favorite && <span>⭐<br /></span> } {pokeObj.favorite}</p>
         <Link href={`/pokemon/${pokeObj.firebaseKey}`} passHref>
-          <Button variant="primary" className="m-2" style={{ backgroundColor: '#023e8a', fontSize: '10px' }}>VIEW</Button>
+          <Button variant="outline-primary" className="m-2" style={{ backgroundColor: '', fontSize: '10px' }}>VIEW</Button>
         </Link>
         <Link href={`/pokemon/edit/${pokeObj.firebaseKey}`} passHref>
-          <Button variant="info" style={{ backgroundColor: '#00b4d8', fontSize: '10px' }}>EDIT</Button>
+          <Button variant="outline-info" style={{ backgroundColor: '', fontSize: '10px' }}>EDIT</Button>
         </Link>
-        <Button variant="danger" onClick={deleteThisPokemon} className="m-2" style={{ backgroundColor: '#f77f00', fontSize: '10px' }}>
+        <Button variant="outline-danger" onClick={deleteThisPokemon} className="m-2" style={{ backgroundColor: '', fontSize: '10px' }}>
           DELETE
         </Button>
       </Card.Body>

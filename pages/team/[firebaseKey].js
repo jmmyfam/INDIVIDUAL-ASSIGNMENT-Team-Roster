@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { viewTeamDetails } from '../../api/mergedData';
@@ -23,19 +24,19 @@ export default function ViewTeam() {
     <div>
       <div className="mt-5 d-flex flex-wrap" style={{ marginTop: '100px' }}>
         <div className="d-flex flex-column">
-          <img src={teamDetails.image} alt={teamDetails.team_name} style={{ width: '300px' }} />
+          <img src={teamDetails.image} alt={teamDetails.team_name} style={{ width: '500px' }} />
         </div>
-        <div className="text-white ms-5 details">
+        <div className="text-white ms-5 details" style={{ color: 'black' }}>
           <h5>
             {teamDetails.team_name}
-            {teamDetails.favorite ? ' 🤍' : ''}
+            {teamDetails.favorite ? ' ⭐' : ''}
           </h5>
-          Team Email: <a href={`mailto:${teamDetails.email}`}>{teamDetails.email}</a>
+          <h6> Creator: { teamDetails.creator } </h6>
           <hr />
         </div>
       </div>
       <div className="d-flex flex-wrap text-center" style={{ marginTop: '50px' }}>
-        {teamDetails.poke?.map((poke) => (
+        {teamDetails.pokemon?.map((poke) => (
           <PokeCard key={poke.firebaseKey} pokeObj={poke} onUpdate={getAllTeamPokemon} />
         ))};
       </div>
