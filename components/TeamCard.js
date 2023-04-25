@@ -13,17 +13,17 @@ export default function TeamCard({ teamObj, onUpdate }) {
   };
 
   return (
-    <Card style={{ width: '30rem', margin: '10px' }}>
+    <Card style={{ width: '30rem', margin: '30px' }}>
       <Card.Img variant="top" src={teamObj.image} alt={teamObj.team_name} style={{ height: '400px' }} />
       <Card.Body>
         <Card.Title>{teamObj.team_name}</Card.Title>
         <Link href={`/team/${teamObj.firebaseKey}`} passHref>
-          <Button variant="primary" className="m-2" style={{ backgroundColor: '#023e8a', margin: '20px' }}>VIEW</Button>
+          <Button variant="outline-primary" className="m-2" style={{ backgroundColor: '', margin: '20px' }}>VIEW</Button>
         </Link>
         <Link href={`/team/edit/${teamObj.firebaseKey}`} passHref>
-          <Button variant="info" style={{ backgroundColor: '#00b4d8', margin: '20px' }}>EDIT</Button>
+          <Button variant="outline-info" style={{ backgroundColor: '', margin: '20px' }}>EDIT</Button>
         </Link>
-        <Button variant="danger" onClick={deleteThisTeam} className="m-2" style={{ backgroundColor: '#f77f00', margin: '20px' }}>
+        <Button variant="outline-danger" onClick={deleteThisTeam} className="m-2" style={{ backgroundColor: '', margin: '20px' }}>
           DELETE
         </Button>
       </Card.Body>
