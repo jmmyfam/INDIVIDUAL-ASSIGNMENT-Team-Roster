@@ -134,11 +134,11 @@ function PokeForm({ obj }) {
         id="favorite"
         name="favorite"
         label="Favorite?"
-        checked={pokeInput.adoptable}
+        checked={pokeInput.favorite}
         onChange={(e) => {
           setPokeInput((prevState) => ({
             ...prevState,
-            adoptable: e.target.checked,
+            favorite: e.target.checked,
           }));
         }}
       />
@@ -154,7 +154,7 @@ PokeForm.propTypes = {
     name: PropTypes.string,
     image: PropTypes.string,
     description: PropTypes.string,
-    adoptable: PropTypes.bool,
+    favorite: PropTypes.bool,
     team_id: PropTypes.string,
     firebaseKey: PropTypes.string,
   }),

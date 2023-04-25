@@ -15,12 +15,15 @@ function PokeCard({ pokeObj, onUpdate }) {
   };
 
   return (
-    <Card style={{ width: '16rem', height: '27rem', margin: '10px' }}>
+    <Card style={{
+      width: '16rem', height: '27rem', margin: '25px', border: 'none',
+    }}
+    >
       <Card.Img variant="top" src={pokeObj.image} alt={pokeObj.name} style={{ height: '400px' }} />
       <Card.Body>
         <Card.Title>{pokeObj.name}</Card.Title>
         <p className="card-text bold">{pokeObj.team}</p>
-        <p className="card-text bold">{pokeObj.favorite && <span>ADOPTABLE<br /></span> } {pokeObj.favorite}</p>
+        <p className="card-text bold">{pokeObj.favorite && <span>⭐<br /></span> } {pokeObj.favorite}</p>
         <Link href={`/pokemon/${pokeObj.firebaseKey}`} passHref>
           <Button variant="primary" className="m-2" style={{ backgroundColor: '#023e8a', fontSize: '10px' }}>VIEW</Button>
         </Link>
