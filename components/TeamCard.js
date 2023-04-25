@@ -13,7 +13,7 @@ export default function TeamCard({ teamObj, onUpdate }) {
   };
 
   return (
-    <Card style={{ width: '22rem', margin: '5px' }}>
+    <Card style={{ width: '30rem', margin: '10px' }}>
       <Card.Img variant="top" src={teamObj.image} alt={teamObj.team_name} style={{ height: '400px' }} />
       <Card.Body>
         <Card.Title>{teamObj.team_name}</Card.Title>

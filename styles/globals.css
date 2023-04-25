@@ -20,3 +20,18 @@ a {
 body {
   background-color: #ffffff;
 }
+
+p {
+  color: black;
+}
+
+h5 {
+  color: black;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+
+h6 {
+  color: black;
+}

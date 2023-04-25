@@ -22,8 +22,8 @@ export default function ViewPokemon() {
       </div>
       <div className="text-white ms-5 details">
         <h5>
-          {pokeDetails.name} on {pokeDetails.teamObject?.team_name}
-          {pokeDetails.favorite ? ' 🤍' : ''}
+          {pokeDetails.name} - {pokeDetails.teamObject?.team_name}
+          {pokeDetails.favorite ? ' ⭐' : ''}
         </h5>
         <p>{pokeDetails.description || ''}</p>
       </div>
