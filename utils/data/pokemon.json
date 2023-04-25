@@ -1,0 +1,24 @@
+{
+  "1": {
+    "firebaseKey": "",
+    "team_id": "",
+    "name": "Lugia",
+    "image": "https://static.wikia.nocookie.net/sonicpokemon/images/a/a7/Lugia.png/revision/latest?cb=20120603213737",
+    "team": "Team Legendary",
+    "description": "Lugias wings pack devastating power—a light fluttering of its wings can blow apart regular houses. As a result, this Pokémon chooses to live out of sight deep under the sea.",
+    "favorite": true,
+    "uid": ""
+  },
+ 
+ 
+  "2": {
+    "firebaseKey": "-NMK2K7DU06FVcQLstrd",
+    "team_id": "",
+    "name": "Pikachu",
+    "image": "https://www.bitgab.com/uploads/1597796080-pikachu-1597796080.png",
+    "team": "Team Electric",
+    "description": "When it is angered, it immediately discharges the energy stored in the pouches in its cheeks.",
+    "favorite": true,
+    "uid": ""
+  }
+}
