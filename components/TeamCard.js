@@ -16,7 +16,7 @@ export default function TeamCard({ teamObj, onUpdate }) {
     <Card style={{ width: '30rem', margin: '30px' }}>
       <Card.Img variant="top" src={teamObj.image} alt={teamObj.team_name} style={{ height: '400px' }} />
       <Card.Body>
-        <Card.Title>{teamObj.team_name}</Card.Title>
+        <Card.Title style={{ textDecoration: 'underline', fontSize: 'large' }}>{teamObj.team_name}</Card.Title>
         <Link href={`/team/${teamObj.firebaseKey}`} passHref>
           <Button variant="outline-primary" className="m-2" style={{ backgroundColor: '', margin: '20px' }}>VIEW</Button>
         </Link>
