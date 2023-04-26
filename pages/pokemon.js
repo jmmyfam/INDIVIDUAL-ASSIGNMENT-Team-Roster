@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Image, Button } from 'react-bootstrap';
+import Head from 'next/head';
 import { getPokemon } from '../api/pokeData';
 import { useAuth } from '../utils/context/authContext';
 import PokeCard from '../components/PokeCard';
@@ -24,6 +25,9 @@ function Home() {
 
   return (
     <div className="text-center my-4">
+      <Head>
+        <title>See All Pokemon</title>
+      </Head>
       <Link href="/pokemon/new" passHref>
         <Button style={{ backgroundColor: 'transparent', border: 'none' }}>
           <Image

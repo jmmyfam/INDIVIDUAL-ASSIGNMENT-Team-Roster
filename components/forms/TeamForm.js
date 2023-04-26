@@ -48,7 +48,7 @@ function TeamForm({ obj }) {
   };
   return (
     <Form onSubmit={handleSubmit}>
-      <h2 className="text-white mt-5">{obj.firebaseKey ? 'Update' : 'Create'} Team</h2>
+      <h2 className="text-black mt-5">{obj.firebaseKey ? 'Update' : 'Create'} Team</h2>
 
       {/* TEAM NAME  */}
       <FloatingLabel controlId="floatingInput1" label="Team Name" className="mb-3">

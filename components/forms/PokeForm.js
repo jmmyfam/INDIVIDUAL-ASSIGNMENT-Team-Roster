@@ -54,7 +54,7 @@ function PokeForm({ obj }) {
 
   return (
     <Form onSubmit={handleSubmit} style={{ marginTop: '100px' }}>
-      <h2 className="text-white mt-5">{obj.firebaseKey ? 'Update' : 'Create'} Pokemon</h2>
+      <h2 className="text-black mt-5">{obj.firebaseKey ? 'Update Pokémon' : 'Register to PokéDex'}</h2>
 
       {/* NAME INPUT  */}
       <FloatingLabel controlId="floatingInput1" label="Pokemon Name" className="mb-3">
