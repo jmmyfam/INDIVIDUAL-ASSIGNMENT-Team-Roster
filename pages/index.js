@@ -26,9 +26,9 @@ function Home() {
   return (
     <div className="text-center my-4">
       <Image
-        src="https://assets.stickpng.com/images/612ce4761b9679000402af1c.png"
+        src="https://media2.giphy.com/media/EDfxEtALVhGjm/giphy.gif?cid=ecf05e4715isl3epiqbekx5isv95i9p03ogkrqmjctqefxdy&ep=v1_gifs_related&rid=giphy.gif&ct=s"
         width="250"
-        height="100"
+        height="150"
         className="d-inline-block align-top"
         alt="My Pokemon"
       />

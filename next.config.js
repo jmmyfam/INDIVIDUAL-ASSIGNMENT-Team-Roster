@@ -4,6 +4,6 @@ module.exports = {
   ignoreDuringBuilds: true,
 
   images: {
-    domains: ['assets.stickpng.com'],
+    domains: ['assets.stickpng.com', 'media2.giphy.com'],
   },
 };
