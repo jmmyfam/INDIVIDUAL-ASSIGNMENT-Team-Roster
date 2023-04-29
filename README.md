@@ -7,7 +7,7 @@
 Register Pokemon to your Pokedex and add them to a team! 
 
 ## Tools Used
-
+1. HTML/CSS/JavaScript
 1. React / NextJS
 1. Firebase
 1. Postman
@@ -16,4 +16,4 @@ Register Pokemon to your Pokedex and add them to a team!
 
 ## Preview
 
-<img width="800==" alt="Screen Shot 2022-07-06 at 1 07 27 PM" src="/assets/SS.png">
+<img width="800==" alt="PokeRoster App" src="/assets/SS.png">
