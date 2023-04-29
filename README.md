@@ -4,6 +4,8 @@
 
 ## Welcome to my PokeRoster App!
 
+Register Pokemon to your Pokedex and add them to a team! 
+
 ## Tools Used
 
 1. React / NextJS
