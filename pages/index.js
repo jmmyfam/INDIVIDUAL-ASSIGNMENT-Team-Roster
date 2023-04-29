@@ -12,21 +12,24 @@ function Home() {
   const { user } = useAuth();
 
   // TODO: create a function that makes the API call to get all the books
-  const getAllThePokemon = () => {
-    getPokemon(user.uid).then(setPokemon);
+  const getAllTheFavoritePokemon = () => {
+    getPokemon(user.uid).then((allPokemon) => {
+      const favoritePokemon = allPokemon.filter((poke) => poke.favorite);
+      setPokemon(favoritePokemon);
+    });
   };
-
   // TODO: make the call to the API to get all the books on component render
   useEffect(() => {
-    getAllThePokemon();
+    getAllTheFavoritePokemon();
   }, []);
 
   return (
     <div className="text-center my-4">
+      <h1> My Pokémon </h1>
       <div className="d-flex flex-wrap">
         {/* TODO: map over books here using BookCard component */}
         {pokemon.map((poke) => (
-          <PokeCard key={pokemon.firebaseKey} pokeObj={poke} onUpdate={getAllThePokemon} />
+          <PokeCard key={pokemon.firebaseKey} pokeObj={poke} onUpdate={getAllTheFavoritePokemon} />
         ))}
       </div>
 
