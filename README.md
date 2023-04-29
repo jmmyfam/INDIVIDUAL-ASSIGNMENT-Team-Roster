@@ -10,9 +10,8 @@
 1. Firebase
 1. Postman
 1. react-bootstrap
-1. stack overflow
 1. React Developer Tools
 
-### Preview
+## Preview
 
-<img width="800" alt="Screen Shot 2022-07-06 at 1 07 27 PM" src="/assets/SS.png">
+<img width="800==" alt="Screen Shot 2022-07-06 at 1 07 27 PM" src="/assets/SS.png">
