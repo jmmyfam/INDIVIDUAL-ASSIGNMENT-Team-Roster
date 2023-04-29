@@ -6,6 +6,7 @@ import { useAuth } from '../utils/context/authContext';
 
 export default function ShowTeams() {
   const [teams, setTeams] = useState([]);
+
   const { user } = useAuth();
 
   const getAllTeams = () => {
