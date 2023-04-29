@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import Image from 'next/image';
 import { getPokemon } from '../api/pokeData';
 import { useAuth } from '../utils/context/authContext';
 import PokeCard from '../components/PokeCard';
@@ -25,7 +25,13 @@ function Home() {
 
   return (
     <div className="text-center my-4">
-      <h1> My Pokémon </h1>
+      <Image
+        src="https://assets.stickpng.com/images/612ce4761b9679000402af1c.png"
+        width="250"
+        height="100"
+        className="d-inline-block align-top"
+        alt="My Pokemon"
+      />
       <div className="d-flex flex-wrap">
         {/* TODO: map over books here using BookCard component */}
         {pokemon.map((poke) => (
